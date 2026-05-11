@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Calibri', "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #EDEEEF;
+}
+
+.container_index{
+    width: 480px;
+    height: 280px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 11px;
+
+     transition: height 0.2s ease;
+}
+
+.container_index.error-active {
+    height: 320px;
+}
+
+.container_h2 {
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 25px;
+    font-size: 32px;
+}
+
+.form_login {
+    display: flex;          
+    flex-direction: column; 
+    align-items: center;    
+    
+    margin-left: 26px ;
+    margin-right: 26px ;
+}
+
+.input_box {
+    width: 100%;
+    height: 18px;
+    margin-bottom: 24px;
+}
+
+.input_box input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #CCD0D4;
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.input_box input :focus {
+    border: 1px solid #2359b6;
+}
+
+.input_box input::placeholder {
+    color: black;
+}
+
+.input_password {
+    margin-top: 15px;
+}
+
+.btn {
+    margin-top: 37px;
+
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 47px;
+    padding-right: 47px;
+
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+
+    background-color: #2864CE;
+    
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: transform 0.2s, background-color 0.3s;
+   
+}
+
+.btn:hover {
+    background-color: #2359b6;
+}
